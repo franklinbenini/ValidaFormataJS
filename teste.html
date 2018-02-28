@@ -17,12 +17,13 @@
 <body>
   <div id="divTeste"></div>
 
-  <script src="src/js/validaFormata.js"></script>  
+  <script src="src/js/valida.js"></script>
+  <script src="src/js/formata.js"></script>
   <script>      
-
     document.getElementById("divTeste").innerHTML += "validaCPF - " + validaCPF("98765432100") + "<br>";
     document.getElementById("divTeste").innerHTML += "formataCPF - " + formataCPF("98765432100") + "<br>";
-    document.getElementById("divTeste").innerHTML += "validaCNPJ - " + validaCNPJ("00556819000130") + "<br>";    
+    document.getElementById("divTeste").innerHTML += "validaCNPJ - " + validaCNPJ("00556819000130") + "<br>";
+    document.getElementById("divTeste").innerHTML += "formataCNPJ - " + formataCNPJ("00556819000130") + "<br>";
   </script>
 </body>
 </html>
