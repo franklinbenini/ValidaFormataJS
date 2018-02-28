@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="pt-br">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste</title>
+  
+ <!--  <link rel="stylesheet" href="css/styles.css?v=1.0">   -->
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div id="divTeste"></div>
+
+  <script src="src/js/validaFormata.js"></script>  
+  <script>      
+
+    document.getElementById("divTeste").innerHTML += "validaCPF - " + validaCPF("98765432100") + "<br>";
+    document.getElementById("divTeste").innerHTML += "formataCPF - " + formataCPF("98765432100") + "<br>";
+    document.getElementById("divTeste").innerHTML += "validaCNPJ - " + validaCNPJ("00556819000130") + "<br>";    
+  </script>
+</body>
+</html>
